@@ -42,9 +42,9 @@ input[type="text"], input[type="password"] {
   outline: none;
   color: #e7e7e7;
 }
-input[type=checkbox] {
+/*input[type=checkbox] {
   display: yes;
-}
+}*/
 
 label {color:white;
   margin-top: 2px;
