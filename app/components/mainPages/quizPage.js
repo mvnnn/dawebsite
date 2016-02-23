@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router';
 
-export default class logout extends Component {
+export default class quiz extends Component {
   render() {
     return (
       <div>

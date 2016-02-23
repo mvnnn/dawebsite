@@ -1,18 +1,14 @@
-"use strict";
+import React, { Component } from 'react';
+import { Link } from 'react-router';
 
-import React from 'react';
-import React from 'react-router';
-
-var NotFoundPage = React.createClass({
-	render() {
-		return (
-			<div>
-				<h1>Page Not Found</h1>
-				<p>Whoops! Sorry, there is nothing to see here.</p>
-				<p><Link to="home">Back to Home</Link></p>
-			</div>
-		);
-	}
-});
-
-exports NotFoundPage;
+export default class Header extends Component {
+  render() {
+    return (
+      <div>
+      <h1>Page Not Found</h1>
+      <p>Whoops! Sorry, there is nothing to see here.</p>
+      <p><Link to="home">Back to Home</Link></p>
+      </div>
+    );
+  }
+}

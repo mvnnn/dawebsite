@@ -1,23 +1,23 @@
 import React, { Component } from 'react';
-import Router from 'react-router';
-const DefaultRoute = Router.DefaultRoute;
-const Route = Router.Route;
-const NotFoundRoute = Router.NotFoundRoute;
-const Redirect = Router.Redirect;
+// import ReactRouter from 'react-router';
+import { Router } from 'react-router';
+import { Route } from 'react-router';
+// import { Link } from 'react-router';
+import { DefaultRoute } from 'react-router';
+import { NotFoundRoute } from 'react-router';
+import { Redirect } from 'react-router';
 
 const routes = (
   <Route name="app" path="/" handler={require('./components/app')}>
-    <DefaultRoute name="home" handler={require('./components/homePage/HomePage')} />
-    <Route name="uploadData" handler={require('./components/uploadDataPage/UDPage')} />
-    <Route name="publishNews" handler={require('./components/otherPage/PublishNews')} />
-    <Route name="sendNotification" handler={require('./components/otherPage/SendNotification')} />
+    <DefaultRoute name="exam" handler={require('./components/mainPages/examPage')} />
+    <Route name="quiz" handler={require('./components/mainPages/quizPage')} />
+    <Route name="attendance" handler={require('./components/mainPages/attendancePage')} />
+    <Route name="sendMail" handler={require('./components/mainPages/sendMailPage')} />
     <Route name="logout" handler={require('./components/otherPage/LogoutPage')} />
-    <Route name="addDataRow" path="addDataRow" handler={require('./components/homePage/manageHomePage')} />
-    <Route name="updateRow" path="updateRow/:busno" handler={require('./components/homePage/manageHomePage')} />
     <NotFoundRoute handler={require('./components/notFoundPage')} />
     <Redirect from="home/*" to="home" />
-    <Redirect from="uploadData/*" to="uploadData" />
-    <Redirect from="publishNews/*" to="publishNews" />
-    <Redirect from="sendNotification/*" to="sendNotification" />
+    <Redirect from="quiz/*" to="quiz" />
+    <Redirect from="attendance/*" to="attendance" />
+    <Redirect from="sendMail/*" to="sendMail" />
   </Route>
 );

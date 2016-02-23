@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router';
 
-export default class logout extends Component {
+export default class sendMail extends Component {
   render() {
     return (
       <div>
