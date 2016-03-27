@@ -12,3 +12,5 @@
     $ npm run build
 
 bundled app would be in build directory 
+
+I can't show webpage here because of some collage privacy issue.
